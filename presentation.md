@@ -51,11 +51,29 @@ Exploring validation API solutions in modern Go.
 
 ---
 
-## The basics - immediate problems
+## Simple checks with slice of students
+
+```go
+~~~./code-to-slide.awk code/02-simple-aggregate/main.go
+
+~~~
+```
+
+---
+
+## Simple approach summary
+
+Things we could've done to improve it:
+
+1. DRY, extract common functions for validating specific fields out.
+2. 
+
+Summary:
 
 1. Works perfectly fine with simple structures.
 2. Keeping consistent messages across multiple APIs can become a challenge.
-3. 
+3. What if our models' names change? Example: `Teacher.Name` --> `Teacher.FirstName`. Can we make sure messages reflect this change?
+4. 
 
 ---
 
