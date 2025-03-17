@@ -246,10 +246,13 @@ The three building blocks we've seen are the backbone of govy.
 
 ### What else does it bring to the table?
 
-1. Functional API with its main building blocks being immutable.
-2. Error message templates.
-3. Validation plan.
-3. Automatic property name inference (experimental).
+1. Advanced flow control (error cascade modes).
+2. Conditional execution (predicates).
+3. Functional API with its main building blocks being immutable.
+4. Error message templates.
+5. Validation plan.
+6. Automatic property name inference (experimental).
+7. And more!
 
 ---
 
