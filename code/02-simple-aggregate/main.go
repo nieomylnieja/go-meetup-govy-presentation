@@ -6,15 +6,16 @@ import (
 	"strings"
 )
 
+type Teacher struct { // CO
+	Name string // CO
+	Age  int    // CO
+} // CO
+// CO
+
 type multiError []string
 
 func (m multiError) Error() string {
 	return strings.Join(m, "; ")
-}
-
-type Teacher struct {
-	Name string
-	Age  int
 }
 
 func validateTeacher(teacher Teacher) error {
