@@ -15,9 +15,9 @@ func (m multiError) Error() string { // CO
 } // CO
 // CO
 type Teacher struct {
-	Name     string    // CO
-	Age      int       // CO
-  // ...
+	Name string // CO
+	Age  int    // CO
+	// ...
 	Students []Student
 }
 
@@ -51,7 +51,7 @@ func validateStudent(student Student) error {
 	intIdx, err := strconv.Atoi(student.Index)
 	switch {
 	case err != nil:
-		return fmt.Errorf("invalid index: %w", err.Error())
+		return fmt.Errorf("invalid index: %w", err)
 	case intIdx == 0:
 		return errors.New("Index must be non-zero")
 	default:

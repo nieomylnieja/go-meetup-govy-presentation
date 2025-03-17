@@ -11,6 +11,8 @@ type Teacher struct { // CO
 	Age  int // CO
 } // CO
 // CO
+type Rule func(v any) error
+
 var teacherRules = map[string]Rule{
 	"Name": func(v any) error {
 		if len(v.(string)) > 20 {
@@ -25,8 +27,6 @@ var teacherRules = map[string]Rule{
 		return nil
 	},
 }
-
-type Rule func(v any) error
 
 func validate(v any, rules map[string]Rule) error {
 	rv := reflect.ValueOf(v)
